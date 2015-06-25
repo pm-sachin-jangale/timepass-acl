@@ -1,0 +1,10 @@
+body {
+	font-family: Arial;
+	font-size: .9em;
+	margin: 0px;
+	padding: 0px;
+}
+
+.pmcc-r-12 {
+	max-width: 1320px !important;
+}

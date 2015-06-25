@@ -1,0 +1,19 @@
+.dropdown-select {
+	font: 13px normal Arial, Helvetica;
+	position: relative;
+	display: block;
+	border-radius: 3px;
+	z-index: 0;
+	padding: 3px 15px 4px 5px;
+	cursor: default;
+	background-color: white;
+}
+
+.dropdown-select option {
+	font: 13px normal Arial, Helvetica;
+	display: block;
+	padding: 3px 5px;
+	cursor: pointer;
+	color: #222121;
+	margin: 0px;
+}

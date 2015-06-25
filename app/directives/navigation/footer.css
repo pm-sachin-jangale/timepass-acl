@@ -1,0 +1,36 @@
+.footer {
+	background: #f0f0f0;
+}
+
+.footer .empty-space {
+	margin-right: 30px;
+	padding: 0;
+}
+
+.footer .pubmatic-links-container {
+	padding-top: 25px;
+}
+
+.footer .pubmatic-links-container .pubmatic-links {
+	list-style: none;
+	padding: 0px;
+	height: 50px;
+	font-size: 0.9em;
+}
+
+.footer .pubmatic-links-container .pubmatic-links .copyright{
+	color: rgb(153,153,153);
+}
+
+.footer .pubmatic-links-container .company-name {
+	font-weight: bold;
+}
+.footer .pubmatic-links-container .pubmatic-links li {
+	float: left;
+	margin-right: 20px;
+}
+
+.footer .pubmatic-links-container .pubmatic-links li > a {
+	text-decoration: none;
+	color: rgb(102, 153, 204);
+}

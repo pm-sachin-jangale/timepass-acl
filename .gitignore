@@ -1,0 +1,10 @@
+bower_components/
+client/lib/
+node_modules/
+jspm_packages/
+app/jspm_packages/
+.idea/
+npm-debug.log
+dist/
+app/200.html
+proxyconfig.json

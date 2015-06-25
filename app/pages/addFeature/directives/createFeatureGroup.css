@@ -1,0 +1,83 @@
+.create-feature-group {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+	/*text-align:center;*/
+	z-index: 1000;
+	background: rgba(255,255,255,0.85);
+}
+
+.create-feature-group .content {
+	min-width:600px;
+	width: 600px;
+	height: 260px;
+	margin: 100px auto;
+	background-color: #fff;
+	box-shadow: 0px 0px 60px #cccccc;
+	padding:15px;
+	position: absolute;
+}
+
+.create-feature-group .content .title-content {
+	color: #666666;
+	font-family: 'Helvetica Neue Thin', 'Helvetica Neue';
+	font-size: 1.2em;
+}
+
+.create-feature-group .content .middle-content {
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.create-feature-group .content .middle-content .row {
+	margin-bottom: 20px;
+	font-family: 'Helvetica Neue Thin', 'Helvetica Neue';
+}
+
+.create-feature-group .content .middle-content .row .title {
+	font-weight: bold;
+	color: #666666;
+	margin-right: 15px;
+}
+
+.create-feature-group .content .middle-content .row .input-feature-group-name {
+	float: right;
+	margin-left: 15px;
+}
+
+.create-feature-group .content .middle-content .row .input-feature-group-name .inputField {
+	width: 280px;
+}
+
+.create-feature-group .content .middle-content .row .input-feature-group-name textarea {
+	height: 85px !important;
+	resize: none;
+}
+
+.create-feature-group .content .footer-content .save-button {
+   /*background: #3399ff;*/
+   padding: 7px 5px;
+   /*color: white;*/
+   font-size: 16px;
+   font-family: Georgia, serif;
+   cursor: pointer;
+   width: 90px;
+   float: right;
+   font-weight: bold;
+   border: none;
+}
+
+.create-feature-group .content .footer-content .cancel-button {
+   background: white;
+   padding: 5px;
+   color: rgb(102, 153, 204);
+   border: 1px solid #666666;
+   font-size: 1.2em;
+   font-family: Georgia, serif;
+   cursor: pointer;
+   width: 90px;
+   font-weight: bold;
+   height: 33px;
+}

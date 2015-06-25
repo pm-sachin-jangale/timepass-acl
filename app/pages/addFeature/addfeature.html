@@ -1,0 +1,54 @@
+<div class="pmcc-r-12 add-feature">
+    <top-navigation class="top-nav"></top-navigation>
+    <sub-nav application-list="addFeature.applicationList.items" on-change-portal="addFeature.onChangePortal(portalName)"></sub-nav>
+	<create-feature-group ng-show="addFeature.showFeatureGroup" callback="addFeature.callbackFeatureGroup(data)"></create-feature-group>
+	<create-feature ng-show="addFeature.showFeature" callback="addFeature.callbackFeature(data)"></create-feature>
+	<div class="pmcc-r-12 button-container">
+		<div class="pmcc-c-1 pmcc-short-column">
+			<span>&nbsp;</span>
+		</div>
+		<div class="pmcc-c-10 pmcc-short-column button-group">
+			<div class="new-features-button">
+				<span>
+					<button type="button" class="pmcc-btn-lg pmcc-btn-primary" ng-click="addFeature.createFeatureGroup()">Add New Feature Group</button>
+				</span>
+				<span>
+					<button type="button" class="pmcc-btn-lg pmcc-btn-primary" ng-click="addFeature.createFeature()">Add New Feature</button>
+				</span>
+			</div>
+			<div class="search-input" ng-hide="addFeature.isEmpty">
+				<span class="search-text ng-scope">
+                	Search:
+                </span>
+                <span class="pmcc-input ng-scope">
+                	<input type="text" class="search-input-field">
+                </span>
+			</div>
+		</div>
+	</div>
+	<div class="pmcc-r-12 feature-container">
+		<div class="pmcc-r-12">
+			<div class="pmcc-c-4 pmcc-short-column">
+				<span>&nbsp;</span>
+			</div>
+			<div ng-show="addFeature.isEmpty" class="pmcc-c-5 pmcc-short-column">
+				<div>
+					You have no features or feature groups in {{addFeature.selectedElement.name}}	
+				</div>
+				<div>
+					Add feature or feature group using Add New Feature button
+				</div>
+			</div>
+		</div>
+		<div ng-hide="addFeature.isEmpty" class="pmcc-c-12 pmcc-short-column">
+		    <div class="dummy-container">
+            	<ul class="dummy-ul">
+            		<li class="dummy-elements" ng-repeat="o in addFeature.featureGroupList.items">
+            			{{o.name}}
+            		</li>
+            	</ul>
+            </div>
+		</div>
+	</div>
+	<footer-nav></footer-nav>    
+</div>

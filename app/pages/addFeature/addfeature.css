@@ -1,0 +1,68 @@
+.add-feature .button-group {
+	background: #f0f0f0;
+	max-width: 1042px;
+	padding: 10px;	
+}
+
+.add-feature .button-container {
+	margin-top: 15px;
+}
+
+.add-feature .button-group .new-features-button {
+   float: left;
+}
+
+.add-feature .button-group .new-features-button button {
+   /*background: #3399ff;*/
+   /*padding: 5px 5px;*/
+   /*color: white;*/
+   font-size: 16px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   border: none;
+   cursor: pointer;
+   margin-right: 5px;
+}
+
+.add-feature .button-group .search-input {
+   float: right;
+}
+
+.add-feature .button-group .search-input .pmcc-input {
+   white-space: inherit;
+}
+
+.add-feature .button-group .search-input .search-text {
+   color: #333333;
+   font-size: 0.9em;
+   font-weight: bold;
+}
+
+.add-feature .button-group .search-input .search-input-field {
+   width: 350px;
+   margin-left: 10px;
+   height: 30px;
+}
+
+.add-feature .feature-container {
+   min-height: 650px;
+}
+
+.dummy-container .dummy-ul {
+   list-style: none;
+}
+
+.dummy-container .dummy-ul .dummy-elements {
+   float: left;
+   margin-right: 10px;
+   font-size: 16px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   border: none;
+   cursor: pointer;
+   background: #3399ff;
+   padding: 5px 5px;
+   color: white;
+}

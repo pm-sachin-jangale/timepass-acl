@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Required for html5mode
+    <base href="/"/>
+    -->
+    <!-- <title>PubMatic UI Boilerplate</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/pubmatic-cc/0.1.41/pmcc.min.css"/>
+    <link rel="stylesheet" href="assets/css/app.css"/>
+</head>
+<body>
+    <!-- <header class="pmcc-page-header " ng-cloak>
+        <h1>PubMatic UI Boilerplate</h1>
+    </header> -->
+    <ui-view>
+        <style>
+            body{overflow:hidden;}
+            .poptag{
+                display:block;
+                position:absolute;
+                width:300px;height:300px;
+                -webkit-transform:translate(-50%,-50%);
+                -ms-transform:translate(-50%,-50%);
+                transform:translate(-50%,-50%);
+                top:50%;left:50%;
+                background: #FFF;
+            }
+            .loader{
+                display:block;position:absolute;
+                height:4em;width:4em;
+                top:50%;left:50%;
+                margin-top:-2em;
+                margin-left:-2em;
+                border-radius:2.5em 2.5em 2.5em 2.5em;
+                background-color:#FFF;
+                box-shadow:inset 0 0 0 0.5em #FFF;
+                background: -webkit-linear-gradient(135deg, #2983D9, #2983D9 50%, #454545 50%, #454545);
+                background: linear-gradient( -45deg,
+                #2983D9, #2983D9 50%, #454545 50%, #454545
+                );
+                background-blend-mode: multiply;
+                border-top:5px solid #2983D9;
+                border-left:5px solid #2983D9;
+                border-bottom:5px solid #454545;
+                border-right:5px solid #454545;
+                -webkit-animation:roto 1s infinite linear;
+                animation:roto 1s infinite linear;
+            }
+            @-webkit-keyframes roto {
+                0%{-webkit-transform:rotateZ(0deg);transform:rotateZ(0deg);}
+                100%{-webkit-transform:rotateZ(360deg);transform:rotateZ(360deg);}
+            }
+            @keyframes roto {
+                0%{-webkit-transform:rotateZ(0deg);transform:rotateZ(0deg);}
+                100%{-webkit-transform:rotateZ(360deg);transform:rotateZ(360deg);}
+            }
+        </style>
+        <div class='poptag'>
+            <div class='loader'></div>
+        </div>
+    </ui-view>
+    <!-- <footer class="pmcc-page-footer" ng-cloak>
+        (c) PubMatic 2015
+    </footer> -->
+    <script src="jspm_packages/github/angular/bower-angular@1.4.0/angular.min.js"></script>
+    <script src="jspm_packages/github/angular-ui/ui-router@0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://s3.amazonaws.com/pubmatic-cc/0.1.41/pmcc.js"></script>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        var __DEV__ = true;
+        System.trace = true;
+        System.import('bootstrap');
+    </script>
+</body>
+</html>

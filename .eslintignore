@@ -1,0 +1,5 @@
+node_modules/**/*
+jspm_packages/**/*
+app/jspm_packages/**/*
+dist/*
+app/config.js

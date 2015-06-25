@@ -1,0 +1,49 @@
+<div class="create-feature-group">
+	<div class="content" style="left: {{getLeftPosition()}}; top: {{getTopPosition()}}">
+		<header class="title-content">
+			<div>Edit Feature Group</div>
+			<div>
+				<hr/>
+			</div>
+		</header>
+		<div class="middle-content">
+			<div class="row">
+				<div>
+					<span class="title">Feature Group Name</span>
+					<span>
+			    		<img src="assets/images/ico-help.png">
+					</span>
+					<span class="ng-scope input-feature-group-name">
+            			<span class="pmcc-input ng-scope">
+            				<input type="text" class="inputField" ng-model="group.name">
+            			</span>
+            		</span>											
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+					<span class="title">Description</span>
+					<span>
+			    		<img src="assets/images/ico-help.png">
+					</span>
+					<span class="ng-scope input-feature-group-name">
+            			<span class="pmcc-input ng-scope">
+            				<textarea class="inputField" ng-model="group.description"></textarea>
+            			</span>
+            		</span>											
+				</div>
+			</div>
+		</div>
+		<footer class="footer-content">
+			<div class="buttons">
+				<span>
+					<button type="button" class="cancel-button" ng-click="cancelClick()">Cancel</button>
+				</span>
+				<span>
+					<button type="button" class="pmcc-btn-sm pmcc-btn-primary save-button" ng-click="saveClick()">Save</button>
+				</span>
+			</div>
+		</footer>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+<div class="pmcc-r-12 ng-scope sub-nav-header">
+	<div class="pmcc-c-1 pmcc-short-column">
+		<span>&nbsp;</span>
+	</div>
+	<div class="pmcc-c-7 pmcc-short-column">
+		<div>
+			<span class="feature-title">Feature & Feature Group</span>
+			<span class="help-button">
+	    		<img src="assets/images/ico-help.png">
+	    	</span>
+		</div>
+	</div>
+	
+    <div class="pmcc-c-4 pmcc-short-column select-portal">
+    	<ul class="right-column">
+            <li>
+            	<span>You are in</span>
+            </li>
+            <li class="selected-portal">
+            	<span>{{selectedPortal.name}}</span>
+            </li>
+            <li class="change-portal">
+            	<a href="#/" class="change-portal-text" ng-click="showMenu()">Change</a>
+            	
+            	<ul class="portal-options" ng-click="changeOption($event)" ng-show="isOptionClick">
+            		<li ng-repeat="o in applicationList">
+		            	<a href="#/" value={{$index}} class="sub-menu-link">{{o.name}}</a>
+		            </li>
+            	</ul>
+            </li>
+            <li class="subnav-settings">
+	            <a href="" class="settings-icon" ng-click="showSettings()">
+	            	<img src="assets/images/settings-cog.png">	
+	            </a>
+            	<ul class="settings-options" ng-show="isSettingsClick">
+		            <li>
+		            	<a href="" class="sub-menu-link">Export File</a>
+		            </li>
+		        </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="pmcc-r-12 ng-scope horizontal-line-container">
+	<div class="pmcc-c-1 pmcc-short-column">
+		<span>&nbsp;</span>
+	</div>
+	<div class="pmcc-c-10 pmcc-short-column horizontal-line">
+		<hr/>
+	</div>
+	<div class="pmcc-c-1 pmcc-short-column">
+		<span>&nbsp;</span>
+	</div>
+</div>

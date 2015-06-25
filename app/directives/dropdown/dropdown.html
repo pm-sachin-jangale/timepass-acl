@@ -1,0 +1,7 @@
+<div class="dropdown-directive">
+	<select class="dropdown-select" ng-model='selectedOption' ng-options="o.label for o in options track by o.value" ng-change="onChangeOption()">
+		<!-- <option class="dropdown-option" ng-repeat="o in options" value={{o.value}}>
+			{{o.label}}
+		</option> -->
+	</select>
+</div>

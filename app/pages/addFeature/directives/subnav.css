@@ -1,0 +1,93 @@
+.sub-nav-header {
+	margin-top: 20px !important;
+	margin-bottom: 0px !important;
+}
+
+.sub-nav-header .feature-title {
+	font-size: 1.5em;
+	margin-right: 5px;
+	color: #333333;
+}
+
+.sub-nav-header .select-portal {
+	margin-left: -128px;	
+}
+
+.sub-nav-header .help-button img {
+	width: 16px;
+	height: 16px;
+}
+
+.sub-nav-header .right-column {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-top: 8px;
+	color: #666666;
+}
+
+.sub-nav-header .right-column li{
+	float: left;
+	margin-right: 33px;
+}
+
+.sub-nav-header .right-column .selected-portal {
+	font-size: 1.4em;
+	margin-top: -4px;
+}
+
+.sub-nav-header .right-column .change-portal {
+
+}
+
+.sub-nav-header .right-column .change-portal .change-portal-text {
+	text-decoration: none;
+	color: #6699CC;
+}
+.sub-nav-header .right-column .change-portal .portal-options {
+	position: absolute;
+	list-style: none;
+	width: 155px;
+	margin-top: 11px;
+	border: 1px solid #cccccc;
+	padding: 10px 0px 0 10px;
+	margin-left: -100px;
+	box-shadow: 1px 1px 7px #cccccc;
+	z-index: 99;
+	background: white;
+}
+
+.sub-nav-header .right-column .change-portal .portal-options li > a{
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.horizontal-line-container {
+	margin: 0;
+}
+
+.horizontal-line-container .horizontal-line {
+	max-width: 1040px;
+}
+
+.sub-nav-header .right-column .subnav-settings {
+	margin-right: 20;
+}
+.sub-nav-header .right-column .subnav-settings .settings-options {
+	position: absolute;
+	list-style: none;
+	width: 115px;
+	margin-top: 11px;
+	border: 1px solid #cccccc;
+	padding: 10px 0px 10px 10px;
+	margin-left: -84px;
+	box-shadow: 1px 1px 7px #cccccc;
+	z-index: 99;
+	background: white;
+}
+
+.sub-nav-header .right-column .subnav-settings .settings-options .sub-menu-link {
+	text-decoration: none;
+}
