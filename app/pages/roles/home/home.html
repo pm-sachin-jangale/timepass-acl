@@ -1,0 +1,36 @@
+<div class="pmcc-r-12 role-home-root">
+    <top-navigation class="top-nav"></top-navigation>
+    <div class="role-home">
+		<div class="pmcc-r-12 middle-content">
+			<div class="pmcc-c-1 pmcc-short-column">
+				<span>&nbsp;</span>
+			</div>
+			<div class="pmcc-c-11 pmcc-short-column">
+				<div class="row">
+					<span class="heading heading-element">Roles</span>
+					<span class="heading-element">
+			    		<img src="assets/images/ico-help.png">
+					</span>
+					<span class="heading-element">
+			    		Add, remove and edit information of all users in this system
+					</span>
+				</div>
+				<div class="row search-bar">
+					<span class="search-element">
+						<button class="pmcc-btn-lg pmcc-btn-primary add-role" ng-click="roleController.addRole()">Add New Role</button>
+					</span>
+					<span class="search-element">
+						<span class="boldText">Filter By:</span>   Status
+					</span>				
+					<span class="search-element custom-dropdown">
+						<custom-dropdown class="input-status-name" options="roleController.statusList" after-option-selected="roleController.getSelectedStatus(value)">
+						</custom-dropdown>
+					</span>
+				</div>
+			</div>
+			<!-- <div class="pmcc-c-6 pmcc-short-column">
+				<span>&nbsp;</span>
+			</div> -->
+		</div>
+	</div>
+</div>

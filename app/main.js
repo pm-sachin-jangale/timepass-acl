@@ -1,6 +1,8 @@
 import 'angular-resource';
 
 import { addFeatureModule } from 'pages/feature/addFeature/addFeature';
+import { rolesModule } from 'pages/roles/roles';
+
 import { pageTitleProvider } from 'services/config/pageTitleProvider';
 import { authInterceptorProvider } from 'services/config/authinterceptor';
 import { topNavigation } from 'directives/navigation/topNavigation';
@@ -11,7 +13,8 @@ export var mainModule = angular.module('app', [
     'pmcc',
     'ui.router',
     'ngResource',
-    addFeatureModule.name
+    addFeatureModule.name,
+    rolesModule.name
 ])
     //.config(['$locationProvider', ($locationProvider) => $locationProvider.html5Mode(true)])
     .config(config)

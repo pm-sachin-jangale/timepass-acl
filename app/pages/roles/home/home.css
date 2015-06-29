@@ -1,0 +1,31 @@
+.role-home .row .heading {
+   font-size: 1.5em;
+   margin-right: 5px;
+   color: #333333;
+}
+
+.role-home .row .heading-element {
+   margin-right: 8px;
+}
+
+.role-home .row.search-bar {
+	padding: 15px;
+	margin-top: 20px;
+	background: #f2f2f2;
+}
+
+.role-home .row.search-bar .search-element {
+	margin-right: 20px;
+}
+
+.role-home .row.search-bar .boldText {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.role-home .row.search-bar .custom-dropdown {
+	position: absolute;
+	left: 275px;
+	top: 65px;
+}
+
