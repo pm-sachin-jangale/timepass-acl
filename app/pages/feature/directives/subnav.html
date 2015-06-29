@@ -4,7 +4,7 @@
 	</div>
 	<div class="pmcc-c-7 pmcc-short-column">
 		<div>
-			<span class="feature-title">Feature & Feature Group</span>
+			<span class="feature-title">{{title}}</span>
 			<span class="help-button">
 	    		<img src="assets/images/ico-help.png">
 	    	</span>
@@ -20,11 +20,11 @@
             	<span>{{selectedPortal.name}}</span>
             </li>
             <li class="change-portal">
-            	<a href="#/" class="change-portal-text" ng-click="showMenu()">Change</a>
+            	<a href="" class="change-portal-text" ng-click="showMenu()">Change</a>
             	
             	<ul class="portal-options" ng-click="changeOption($event)" ng-show="isOptionClick">
             		<li ng-repeat="o in applicationList">
-		            	<a href="#/" value={{$index}} class="sub-menu-link">{{o.name}}</a>
+		            	<a href="" value={{$index}} class="sub-menu-link">{{o.name}}</a>
 		            </li>
             	</ul>
             </li>

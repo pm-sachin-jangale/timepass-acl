@@ -1,5 +1,5 @@
-import template from './addfeature.html!text';
-import css from './addfeature.css!css';
+import template from './addFeature.html!text';
+import css from './addFeature.css!css';
 
 export default function addFeatureRoute($stateProvider, $resourceProvider) {
     return $stateProvider.state('addfeature', {

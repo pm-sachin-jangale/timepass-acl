@@ -1,11 +1,14 @@
 export default function applicationDataFactory (serverDataFactory) {
     var url = '/castrum/applications/:id',
-    resource = serverDataFactory.getResource(url, { id: '@id'});
+    resource = serverDataFactory.getResource(url, { id: '@id'}),
+    applicationData = null, currentPortal = null;
 
     return {
         createApplication: _createApplication,
         getApplicationList: _getApplicationList,
-        getApplicationInformation: _getApplicationInformation
+        getApplicationInformation: _getApplicationInformation,
+        setSelectedPortal: _setSelectedPortal,
+        getSelectedPortal: _getSelectedPortal
     };
 
     /*
@@ -22,8 +25,8 @@ export default function applicationDataFactory (serverDataFactory) {
         "description": "This is ssp application"
     }   
     */
-    function _createApplication (applicationData) {
-        return resource.save(applicationData);
+    function _createApplication (data) {
+        return resource.save(data);
     }
 
 
@@ -43,7 +46,11 @@ export default function applicationDataFactory (serverDataFactory) {
     ]
     */
     function _getApplicationList (callback) {
-        return resource.get(callback);
+        if (applicationData !== null) {
+            return applicationData;
+        } else {
+            return applicationData = resource.get(callback);    
+        }
     }
 
     /*
@@ -55,5 +62,16 @@ export default function applicationDataFactory (serverDataFactory) {
     */
     function _getApplicationInformation (applicationID) {
         return resource.get({id: applicationID})
+    }
+
+    function _getSelectedPortal () {
+        if (currentPortal === null) {
+            currentPortal = applicationData.items[1];
+        }   
+        return currentPortal;
+    }
+
+    function _setSelectedPortal (portal) {
+        currentPortal = portal;
     }
 }

@@ -1,0 +1,49 @@
+<div class="pmcc-r-12 edit-group-root">
+    <top-navigation class="top-nav"></top-navigation>
+    <sub-nav title="Edit Feature Group" selected-portal="editGroup.selectedElement" application-list="editGroup.applicationList.items" on-change-portal="editGroup.onChangePortal(portalName)"></sub-nav>
+	<div class="edit-group">
+		<div class="pmcc-r-12 middle-content">
+			<div class="pmcc-c-1 pmcc-short-column">
+				<span>&nbsp;</span>
+			</div>
+			<div class="pmcc-c-5 pmcc-short-column">
+				<div class="row">
+					<span class="title">Feature Group Name</span>
+					<span>
+			    		<img src="assets/images/ico-help.png">
+					</span>
+					<span class="ng-scope input-feature-group-name">
+            			<span class="pmcc-input ng-scope">
+            				<input type="text" class="inputField" ng-model="editGroup.group.name">
+            			</span>
+            		</span>											
+				</div>
+				<div class="row">
+					<span class="title">Description</span>
+					<span>
+			    		<img src="assets/images/ico-help.png">
+					</span>
+					<span class="ng-scope input-feature-group-name">
+            			<span class="pmcc-input ng-scope">
+            				<textarea class="inputField" ng-model="editGroup.group.description"></textarea>
+            			</span>
+            		</span>											
+				</div>
+				<div class="row rule">
+					<hr></hr>
+				</div>
+				<div class="buttons row">
+					<span>
+						<button class="pmcc-btn-lg pmcc-btn-secondary cancel-button" ng-click="editGroup.cancelClick()">Cancel</button>
+					</span>
+					<span>
+						<button class="pmcc-btn-lg pmcc-btn-primary save-button" ng-click="editGroup.saveClick()">Save</button>
+					</span>
+				</div>
+			</div>
+			<div class="pmcc-c-6 pmcc-short-column">
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</div>
+</div>

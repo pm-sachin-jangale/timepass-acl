@@ -11,13 +11,14 @@ export var subNav = function () {
         template: template,
         scope: {
             onChangePortal: '&',
-            applicationList: '='
+            applicationList: '=',
+            selectedPortal: '=',
+            title: '@'
         },
         link: function (scope, iElement, iAttrs) {
             scope.isOptionClick = false;
-            scope.selectedPortal = { name: 'Phoenix' };
             scope.isSettingsClick = false;
-            
+            scope.title = scope.title || 'Feature & Feature Group';
             scope.showMenu = function () {
                 scope.isOptionClick = !scope.isOptionClick;
             }

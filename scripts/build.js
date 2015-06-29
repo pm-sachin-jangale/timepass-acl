@@ -22,6 +22,7 @@ var jsBundle = path.join(__dirname, '../app/bundle.js');
 var versionedJSBundlePattern = distSlash('bundle.{hash}.js');
 
 var cssBundle = path.join(__dirname, '../app/bundle.css');
+console.log(cssBundle)
 var versionedCSSBundlePattern = distSlash('bundle.{hash}.css');
 
 var srcIndexPath = path.join(__dirname, '../app/index.html');

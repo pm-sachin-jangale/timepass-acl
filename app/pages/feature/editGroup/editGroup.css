@@ -1,0 +1,48 @@
+.edit-group .middle-content {
+	margin-top: 20px;
+}
+
+.edit-group .row {
+	margin-bottom: 20px;
+	font-family: 'Helvetica Neue Thin', 'Helvetica Neue';
+}
+
+.edit-group .row .title {
+	font-weight: bold;
+	color: #666666;
+	margin-right: 15px;
+}
+
+.edit-group .row .input-feature-group-name {
+	float: right;
+	margin-left: 15px;
+}
+
+.edit-group .row .input-feature-group-name .inputField {
+	width: 280px;
+}
+
+.edit-group .row .input-feature-group-name textarea {
+	height: 85px !important;
+	resize: none;
+}
+
+.edit-group .rule {
+	margin-top: 80px;
+}
+
+.edit-group .buttons {
+	margin-top: 20px;
+}
+
+.edit-group .buttons .save-button {
+   width: 90px;
+   float: right;
+}
+
+.edit-group .buttons .cancel-button {
+	color: #363636;
+	border-color: #c7c7c7;
+	background-image: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+   	width: 90px;
+}

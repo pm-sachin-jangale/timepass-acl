@@ -1,5 +1,5 @@
 export default function featureFactory (serverDataFactory) {
-    var url = 'castrum/feature/:id',
+    var url = '/castrum/feature/:id',
     resource = serverDataFactory.getResource(url, { id: '@id'});
 
     return {
@@ -45,8 +45,8 @@ export default function featureFactory (serverDataFactory) {
         }
     */
 
-    function _createGroup (featureData) {
-        return resource.save(featureData);
+    function _createGroup (featureData, callback) {
+        return resource.save(featureData, callback);
     }
 
 
@@ -71,8 +71,9 @@ export default function featureFactory (serverDataFactory) {
     }]
     */
 
-    function _getFeatureList () {
-        return resource.query();
+    function _getFeatureList (grouId, callback) {
+        return resource.get({groupID: grouId}, callback);
+        //return resource.query();
     }
 
     /*
@@ -94,7 +95,7 @@ export default function featureFactory (serverDataFactory) {
         "controlType": 2
     }
     */
-    function _getFeatureInformation (groupID) {
-        return resource.get({id: groupID})
+    function _getFeatureInformation (groupID, callback) {
+        return resource.get({id: groupID}, callback)
     }
 }

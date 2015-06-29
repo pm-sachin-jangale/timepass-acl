@@ -16,7 +16,7 @@ export var customDropdown = function ($window) {
         },
         link: function (scope, iElement, iAttrs) {
             scope.onChangeOption = function () {
-                scope.afterOptionSelected({value: scope.selectedOption.label});
+                scope.afterOptionSelected({value: scope.selectedOption.name});
             }
         }
     }

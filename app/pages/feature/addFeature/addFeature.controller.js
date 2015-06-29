@@ -1,23 +1,26 @@
 export default class AddFeature {
-    constructor(applicationDataFactory, featureGroupFactory, featureFactory) {
+    constructor(applicationDataFactory, featureGroupFactory, featureFactory, $state) {
         let vThis = this;
+        
+        vThis.isEmpty = false;
+        vThis.selectedElement = null;
 
+        vThis.$state = $state;
         vThis.featureGroupFactory = featureGroupFactory;
         vThis.applicationDataFactory = applicationDataFactory;
         vThis.featureFactory = featureFactory;
 
         vThis.applicationList = applicationDataFactory.getApplicationList(vThis.onFetchApplicationList.bind(vThis));
+        
+        if (vThis.applicationList.hasOwnProperty('items')) {
+            vThis.onFetchApplicationList();
+        }
         //vThis.featureList = featureFactory.getFeaturesList();
-
-        vThis.isEmpty = false;
-        vThis.selectedElement = null;
-        vThis.showFeatureGroup = false;
-        vThis.showFeature = false;         
     }
 
     onFetchApplicationList () {
         let vThis = this;
-        vThis.selectedElement = vThis.applicationList.items[1];
+        vThis.selectedElement = vThis.applicationDataFactory.getSelectedPortal();
         vThis.getFeatureGroupList();    
     }
 
@@ -29,36 +32,28 @@ export default class AddFeature {
     onChangePortal (portal) {
         let vThis = this;
         vThis.selectedElement = portal;
+        vThis.applicationDataFactory.setSelectedPortal(portal);
         vThis.getFeatureGroupList()
     }
 
     getFeatureGroupList () {
         let vThis = this;
         vThis.featureGroupList = vThis.featureGroupFactory.getGroupsList(vThis.selectedElement.id, vThis.onFetchFeatureGroupList.bind(vThis));
-        console.log(vThis.featureGroupList);
     }
 
     createFeatureGroup () {
-        this.showFeatureGroup = true;   
+        this.$state.go('editgroup');
     }
 
     createFeature () {
-        this.showFeature = true;    
+        this.$state.go('editfeature');    
     }
 
-    callbackFeatureGroup (data) {
-        let vThis = this;
-        data.applications = [vThis.selectedElement];
-
-        vThis.showFeatureGroup = false;
-        vThis.featureGroupFactory.createGroup(data, vThis.onGroupCreated.bind(vThis));
-    }
-
-    callbackGroup () {
+    /*callbackGroup () {
         this.showFeature = false;   
-    }
+    }*/
 
-    onGroupCreated (data) {
+    /*onGroupCreated (data) {
         this.featureGroupList.items.push(data);
-    }
+    }*/
 }

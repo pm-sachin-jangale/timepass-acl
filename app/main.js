@@ -1,6 +1,6 @@
 import 'angular-resource';
 
-import { addFeatureModule } from 'pages/addFeature/addfeature';
+import { addFeatureModule } from 'pages/feature/addFeature/addFeature';
 import { pageTitleProvider } from 'services/config/pageTitleProvider';
 import { authInterceptorProvider } from 'services/config/authinterceptor';
 import { topNavigation } from 'directives/navigation/topNavigation';

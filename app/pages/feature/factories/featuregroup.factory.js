@@ -1,5 +1,5 @@
 export default function featureGroupFactory (serverDataFactory) {
-    var url = 'castrum/featureGroups?applicationId=:applicationID',
+    var url = '/castrum/featureGroups?applicationId=:applicationID',
     resource = serverDataFactory.getResource(url, { applicationID: '@applicationID' });
 
     return {
@@ -66,8 +66,8 @@ export default function featureGroupFactory (serverDataFactory) {
         }
     ]
     */
-    function _getFeatureGroupList (appid) {
-    	return resource.get({applicationID: appid});
+    function _getFeatureGroupList (appid, callback) {
+    	return resource.get({applicationID: appid}, callback);
     }
 
     /*
@@ -83,7 +83,7 @@ export default function featureGroupFactory (serverDataFactory) {
 	        }
 	    ]
 	}*/
-    function _getFeatureGroupInformation (groupID) {
-    	return resource.get({id: groupID})
+    function _getFeatureGroupInformation (groupID, callback) {
+    	return resource.get({id: groupID}, callback);
     }
 }

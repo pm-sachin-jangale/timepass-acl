@@ -1,8 +1,8 @@
 <div class="pmcc-r-12 add-feature">
     <top-navigation class="top-nav"></top-navigation>
-    <sub-nav application-list="addFeature.applicationList.items" on-change-portal="addFeature.onChangePortal(portalName)"></sub-nav>
-	<create-feature-group ng-show="addFeature.showFeatureGroup" callback="addFeature.callbackFeatureGroup(data)"></create-feature-group>
-	<create-feature ng-show="addFeature.showFeature" callback="addFeature.callbackFeature(data)"></create-feature>
+    <sub-nav selected-portal="addFeature.selectedElement" application-list="addFeature.applicationList.items" on-change-portal="addFeature.onChangePortal(portalName)"></sub-nav>
+	<!-- <create-feature-group ng-if="addFeature.showFeatureGroup" callback="addFeature.callbackFeatureGroup(data)"></create-feature-group> -->
+	<!-- <create-feature ng-if="addFeature.showFeature" callback="addFeature.callbackFeature(data)"></create-feature> -->
 	<div class="pmcc-r-12 button-container">
 		<div class="pmcc-c-1 pmcc-short-column">
 			<span>&nbsp;</span>
